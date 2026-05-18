@@ -1,8 +1,10 @@
+import os
+
 import streamlit as st
 import requests
 import pandas as pd
 
-base_url = "http://127.0.0.1:8000"
+base_url = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="Smart AI Business Assistant Platform", layout="wide")
 
@@ -66,7 +68,7 @@ with tab2:
     #     st.warning("Please log in to upload documents.")
     # else:
         st.markdown("### Upload Business Documents")
-        uploaded_file = st.file_uploader("Choose a PDF or TXT file", type=["pdf", "txt"])
+        uploaded_file = st.file_uploader("Choose a PDF file", type=["pdf"])
 
         if st.button("Upload to Memory"):
             if uploaded_file is not None:

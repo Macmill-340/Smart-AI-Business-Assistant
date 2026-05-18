@@ -21,7 +21,7 @@ services:
     ports:
       - "8501:8501"
     env_file:
-      - .env
+      - .env  # This ensures BACKEND_URL is pulled from your .env file
     depends_on:
       - backend
     volumes:

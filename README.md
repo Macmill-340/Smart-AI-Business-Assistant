@@ -72,6 +72,7 @@ Create a `.env` file in the root directory:
 SECRET_ENV_KEY=your_secret_jwt_key
 ALGORITHM_ENV_KEY=HS256
 GEMINI_API_KEY=your_google_gemini_api_key
+BACKEND_URL=http://backend:8000
 ```
 
 ### 3. Run with Docker (Recommended)
