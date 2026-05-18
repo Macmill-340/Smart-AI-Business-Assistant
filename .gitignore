@@ -1,0 +1,22 @@
+# Local Databases
+*.db
+*.sqlite3
+chroma_db/
+
+# Environments & Secrets
+.env
+.venv/
+env/
+venv/
+
+# Python junk
+__pycache__/
+*.pyc
+
+# IDEs
+.idea/
+.vscode/
+
+# Build artifacts
+installer_output/
+uv.lock
