@@ -1,5 +1,6 @@
 # Local Databases
 *.db
+*.csv
 *.sqlite3
 chroma_db/
 
